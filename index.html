@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sergiosja de la Res</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1><a href="index.html"> Sergiosja de la Res </a></h1>
+    </div>
+
+    <!-- The four options presented -->
+    <div class="container flex">
+      <div class="block">
+        <a href="menu.html">
+          <h2>Menu</h2>
+          <p>
+            Have a look through the finest meals this side of town has to offer,
+            perhaps you will discover your new favourite cuisine.
+          </p>
+        </a>
+      </div>
+
+      <div class="block">
+        <a href="reservation.html">
+          <h2>Reservation</h2>
+          <p>
+            Find out if your preferred table is available for your dream date.
+          </p>
+        </a>
+      </div>
+
+      <div class="block" onclick="scrollAbout()">
+        <a>
+          <h2>About</h2>
+          <p>
+            Curious about the place? Perhaps you would like to know more about
+            the owners? Your search might be over.
+          </p>
+        </a>
+      </div>
+
+      <div class="block" onclick="scrollContact()">
+        <a
+          ><h2>Contact</h2>
+          <p>
+            We have the best customer service in town, available wherever you
+            need it, wherever you might need it.
+          </p>
+        </a>
+      </div>
+    </div>
+    <!-- End of four options -->
+
+    <!-- Navigation bar appears after you scroll past the menu -->
+    <nav class="sticky visibleOff" id="navbar">
+      <div class="container">
+        <ul>
+          <li>Sergiosja de la Res</li>
+          <li><a onclick="scrollContact()"> Contact </a></li>
+          <li><a onclick="scrollAbout()"> About </a></li>
+          <li><a href="reservation.html"> Reserve </a></li>
+          <li><a href="menu.html"> Menu </a></li>
+          <li><a onclick="up()"> Home </a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navbar code -->
+
+    <br /><br />
+
+    <!-- The about section -->
+    <div class="container2">
+      <div id="about">
+        <h1>About</h1>
+        <p>
+          This is the website of a fictional restaurant. "Sergiosja" is a
+          russian version of my first name, Sergey. "de la" roughly translates
+          to "of the" in French. "Res" is an abbreviation of the english word
+          "Restaurant". As you can see, the title is made up of three languages,
+          and makes no sense.
+          <br /><br />
+          I created the webside because I wanted to implement a cinema-like
+          feature you can check out if you attempt to reserve a table. I have
+          never seen it on any other restaurant website I have visited in the
+          past. Perhaps it is unnecessary, but I personally would not mind to
+          know where I will be seated during a restaurant visit. Especially if
+          you are to be seated for hours. Do you want to be near the bar? Near
+          the bathrooms? As far away from the entrance as possible?
+          <br /><br />
+          The photo on the right is a free stock photo I fetched on
+          <a
+            href="https://www.pexels.com/photo/man-holding-white-plate-2494659/"
+            target="_blank"
+          >
+            Pexels</a
+          >.
+        </p>
+        <br /><br />
+      </div>
+
+      <aside id="sidebar">
+        <img src="Images/chef.jpg" alt="chef" />
+      </aside>
+    </div>
+    <!-- End of about section -->
+
+    <br />
+
+    <!-- The contact section -->
+    <div class="container2">
+      <div id="contact">
+        <h1>Contact me</h1>
+        <p>
+          If this was your restaurant, this is probably where you would put your
+          adress, your phone number, some email etc. You could also get a visual
+          map to make it even easier to see your location.
+          <br /><br />
+          If you want to contact me, however, you have to reach me on
+          <a href="https://www.linkedin.com/in/sergey-jakobsen-b2597a1a4/">
+            Linkedin</a
+          >. You can also follow me here on
+          <a href="https://www.github.com/sergiosja"> GitHub</a>. For the
+          especially interested, I also have an
+          <a href="https://www.instagram.com/sergiosja"> Instagram</a>, though I
+          very rarely use it.
+
+          <br /><br />
+          If I by any chance have breached some copyright or anything along
+          those lines, please feel free to reach me by Email. I will not link it
+          here, but it is directly linked from my Instagram, and you can also
+          find it on Linkedin, I think.
+          <br /><br />
+          The last option I will give you is to simply give me
+          <em>your</em> email:
+          <input type="email" placeholder="Enter email here" id="email" />
+          <button onclick="process()">✓</button> <br /><br />
+          The photo on the left is another free stock photo I found on, you
+          guessed it,
+          <a
+            href="https://www.pexels.com/photo/baked-baking-chef-dough-784633/"
+            target="_blank"
+          >
+            Pexels</a
+          >.
+        </p>
+      </div>
+
+      <aside id="sidebar2">
+        <img src="Images/baking.jpg" alt="baking" />
+      </aside>
+    </div>
+    <!-- End of contact section -->
+
+    <!-- A footer is found if the user scrolls all the way down -->
+    <footer id="footer">
+      <p>
+        &copy; 2020 Sergey Jakobsen, Sergiosja de la Res International. All
+        Rights Reserved.
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <script type="text/javascript" src="JavaScript/index.js"></script>
+  </body>
+</html>

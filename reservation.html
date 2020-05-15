@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reservation</title>
+    <link rel="stylesheet" type="text/css" href="CSS/reservation.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1><a href="index.html"> Sergiosja de la Res </a></h1>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="container">
+      <div class="block darkBrownColour">
+        <h2 id="seatAmount" class="darkBrownColour">
+          How many people will be seated?
+        </h2>
+        <p id="warning"></p>
+
+        <!-- The user chooses amount of people attending -->
+        <input type="radio" id="resOne" name="amount" value="resOne" />
+        <label for="resOne"> One </label>
+        <input type="radio" id="resTwo" name="amount" value="resTwo" />
+        <label for="resTwo"> Two </label>
+        <input type="radio" id="resThree" name="amount" value="resThree" />
+        <label for="resThree"> Three </label>
+        <input type="radio" id="resFour" name="amount" value="resFour" />
+        <label for="resFour"> Four </label>
+
+        <br /><br />
+        <button type="button" class="btn" onclick="proceed1()">Confirm</button>
+      </div>
+    </div>
+    <!-- End of Section 1 -->
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- Section 2 -->
+    <div class="container">
+      <div class="block">
+        <h2 class="darkBrownColour">What date would you like to book?</h2>
+        <p id="warning2"></p>
+
+        <!-- The calendar -->
+        <div id="calendar">
+          <ul class="weekdays">
+            <li>Monday</li>
+            <li>Tuesday</li>
+            <li>Wednesday</li>
+            <li>Thursday</li>
+            <li>Friday</li>
+            <li>Saturday</li>
+            <li>Sunday</li>
+          </ul>
+
+          <div class="blockOverrider">
+            <ul class="days">
+              <li></li>
+              <li></li>
+              <!-- This is done to match the month of April 2020 -->
+              <li id="one" onclick="first()">1</li>
+              <li id="two" onclick="second()">2</li>
+              <li id="three" onclick="third()">3</li>
+              <li id="four" onclick="fourth()">4</li>
+              <li id="five" onclick="fifth()">5</li>
+              <li id="six" onclick="sixth()">6</li>
+              <li id="seven" onclick="seventh()">7</li>
+              <li id="eight" onclick="eighth()">8</li>
+              <li id="nine" onclick="nineth()">9</li>
+              <li id="ten" onclick="tenth()">10</li>
+              <li id="eleven" onclick="eleventh()">11</li>
+              <li id="twelve" onclick="twelfth()">12</li>
+              <li id="thirteen" onclick="thirteenth()">13</li>
+              <li id="fourteen" onclick="fourteenth()">14</li>
+              <li id="fifteen" onclick="fifteenth()">15</li>
+              <li id="sixteen" onclick="sixteenth()">16</li>
+              <li id="seventeen" onclick="seventeenth()">17</li>
+              <li id="eighteen" onclick="eighteenth()">18</li>
+              <li id="nineteen" onclick="nineteenth()">19</li>
+              <li id="twenty" onclick="twentieth()">20</li>
+              <li id="twentyone" onclick="twentyfirst()">21</li>
+              <li id="twentytwo" onclick="twentysecond()">22</li>
+              <li id="twentythree" onclick="twentythird()">23</li>
+              <li id="twentyfour" onclick="twentyfourth()">24</li>
+              <li id="twentyfive" onclick="twentyfifth()">25</li>
+              <li id="twentysix" onclick="twentysixth()">26</li>
+              <li id="twentyseven" onclick="twentyseventh()">27</li>
+              <li id="twentyeight" onclick="twentyeighth()">28</li>
+              <li id="twentynine" onclick="twentynineth()">29</li>
+              <li id="thirty" onclick="thirtyeth()">30</li>
+            </ul>
+          </div>
+        </div>
+        <!-- End of calendar -->
+
+        <br /><br />
+        <button type="button" class="btn" onclick="proceed2()">Confirm</button>
+      </div>
+    </div>
+    <!-- End of section 2 -->
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+    <!-- Section 3 -->
+    <div class="container">
+      <div class="block">
+        <h2 id="info" class="darkBrownColour"></h2>
+        <p id="warning3"></p>
+        <div id="outline">
+          <!-- Sketch of the restaurant -->
+          <div class="flex">
+            <div id="entrance">Entrance</div>
+          </div>
+
+          <div class="flex">
+            <div id="wc">WC</div>
+          </div>
+
+          <div class="flex">
+            <div id="bar">Reception / Bar</div>
+          </div>
+
+          <div class="flex">
+            <div id="wall"></div>
+          </div>
+
+          <!-- Top table row -->
+          <div class="flex">
+            <div class="seat1" id="seat1" onclick="t1()"></div>
+            <div class="seat1" id="seat2" onclick="t1()"></div>
+            <div
+              class="seat1"
+              id="seat5"
+              onclick="t2()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat6" onclick="t2()"></div>
+            <div
+              class="seat1"
+              id="seat9"
+              onclick="t3()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat10" onclick="t3()"></div>
+            <div
+              class="seat1"
+              id="seat13"
+              onclick="t4()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat15"
+              onclick="t5()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat17"
+              onclick="t6()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat18" onclick="t6()"></div>
+          </div>
+          <div class="flex">
+            <div class="table1">Table 1</div>
+            <div class="table2">Table 2</div>
+            <div class="table2">Table 3</div>
+            <div class="table3">T4</div>
+            <div class="table3">T5</div>
+            <div class="table2">Table 6</div>
+          </div>
+          <div class="flex">
+            <div class="seat1" id="seat3" onclick="t1()"></div>
+            <div class="seat1" id="seat4" onclick="t1()"></div>
+            <div
+              class="seat1"
+              id="seat7"
+              onclick="t2()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat8" onclick="t2()"></div>
+            <div
+              class="seat1"
+              id="seat11"
+              onclick="t3()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat12" onclick="t3()"></div>
+            <div
+              class="seat1"
+              id="seat14"
+              onclick="t4()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat16"
+              onclick="t5()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat19"
+              onclick="t6()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat20" onclick="t6()"></div>
+          </div>
+
+          <br /><br />
+
+          <!-- Bottom table row -->
+          <div class="flex">
+            <div class="seat1" id="seat21" onclick="t7()"></div>
+            <div class="seat1" id="seat22" onclick="t7()"></div>
+            <div
+              class="seat1"
+              id="seat25"
+              onclick="t8()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat26" onclick="t8()"></div>
+            <div
+              class="seat1"
+              id="seat29"
+              onclick="t9()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat30" onclick="t9()"></div>
+            <div
+              class="seat1"
+              id="seat33"
+              onclick="t10()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat35"
+              onclick="t11()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat37"
+              onclick="t12()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat38" onclick="t12()"></div>
+          </div>
+          <div class="flex">
+            <div class="table1">Table 7</div>
+            <div class="table2">Table 8</div>
+            <div class="table2">Table 9</div>
+            <div class="table3">T10</div>
+            <div class="table3">T11</div>
+            <div class="table2">Table 12</div>
+          </div>
+          <div class="flex">
+            <div class="seat1" id="seat23" onclick="t7()"></div>
+            <div class="seat1" id="seat24" onclick="t7()"></div>
+            <div
+              class="seat1"
+              id="seat27"
+              onclick="t8()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat28" onclick="t8()"></div>
+            <div
+              class="seat1"
+              id="seat31"
+              onclick="t9()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat32" onclick="t9()"></div>
+            <div
+              class="seat1"
+              id="seat34"
+              onclick="t10()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat36"
+              onclick="t11()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div
+              class="seat1"
+              id="seat39"
+              onclick="t12()"
+              style="margin: 2px 2px 2px 100px;"
+            ></div>
+            <div class="seat1" id="seat40" onclick="t12()"></div>
+          </div>
+        </div>
+
+        <br />
+        <button type="button" class="btn">
+          <a href="reservationComplete.html" style="color: #996515;">
+            Confirm
+          </a>
+        </button>
+      </div>
+    </div>
+    <!-- End of Section 1 -->
+
+    <script type="text/javascript" src="JavaScript/proceed3.js"></script>
+    <script type="text/javascript" src="JavaScript/proceed2.js"></script>
+    <script type="text/javascript" src="JavaScript/proceed1.js"></script>
+  </body>
+</html>

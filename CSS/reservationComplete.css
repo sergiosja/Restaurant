@@ -1,0 +1,43 @@
+body{
+  font-size: 16px;
+  line-height: 1.6em;
+  margin: 0;
+  background: #101010;
+}
+
+/* Classes */
+
+.block{
+  font-family: "Palatino Linotype";
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-radius: 15px;
+  background: #101010;
+  color: #996515;
+  font-style: italic;
+}
+
+.block a{
+  text-decoration: none;
+  color: #664410;
+}
+
+/* IDs */
+
+#header{
+  background: #101010;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+#header a{
+  text-decoration: none;
+  font-style: italic;
+  font-family: "Palatino Linotype";
+  font-size: 65px;
+  line-height: 160%;
+  color: #996515;
+}

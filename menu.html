@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sergiosja de la Res</title>
+    <link rel="stylesheet" type="text/css" href="CSS/menu.css" />
+  </head>
+  <body>
+    <div id="header">
+      <h1><a href="index.html"> Sergiosja de la Res </a></h1>
+    </div>
+
+    <!-- Intro -->
+    <div class="container">
+      <div id="intro">
+        <h1>Menu</h1>
+        Welcome to the menu! If I ran a real restaurant, I would serve russian
+        starters, italian pizzas, norwegian soups and desserts from cyprus.
+        <br /><br />
+        By the way! The currency is not dollars! They are my own Sergiosja-coin.
+        What else could the S possibly stand for? <br /><br />
+        If you do not want to scroll down, you can easily click either one of
+        these following categories, and have a look! Perhaps you will discover
+        your new favourite dish.. We offer
+        <a onclick="scrollStarters()">starters</a>,
+        <a onclick="scrollPizza()">pizzas</a>,
+        <a onclick="scrollSoup()">soups</a>,
+        <a onclick="scrollSalad()">salads</a> and, of course,
+        <a onclick="scrollDessert()">desserts</a>!
+      </div>
+      <aside id="sidebar">
+        <img src="Images/food.jpg" alt="food" />
+      </aside>
+    </div>
+    <!-- End of intro -->
+
+    <!-- Navigation bar appears after you scroll past the menu -->
+    <nav class="sticky visibleOff" id="navbar">
+      <div class="container">
+        <ul>
+          <li onclick="up()">Sergiosja de la Res</li>
+          <li><a onclick="scrollDessert()"> Desserts </a></li>
+          <li><a onclick="scrollSalad()"> Salads </a></li>
+          <li><a onclick="scrollSoup()"> Soups </a></li>
+          <li><a onclick="scrollPizza()"> Pizzas </a></li>
+          <li><a onclick="scrollStarters()"> Starters </a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- End of navbar code -->
+
+    <!-- Starters section -->
+    <div class="container">
+      <div class="block sectionHeight">
+        <h1 onclick="test()">Starters</h1>
+        <div class="inline">
+          <img src="Images/italy.jpg" />
+          <h2>Bruschetta</h2>
+          <h4>$5</h4>
+          <p>
+            Oven-baked focaccia bread rubbed with fresh garlic, topped with
+            olive oil, tomatoes & salt.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/russia.jpg" />
+          <h2>Vinegret</h2>
+          <h4>$4</h4>
+          <p>
+            Diced cooked beetroots & carrots, chopped onions, sauerkraut &
+            brined pickles.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/germany.jpg" />
+          <h2>Obatzda</h2>
+          <h4>$4</h4>
+          <p>
+            Camembert cheese, butter, sweet paprika powder, garlic, onlion, salt
+            & pepper.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/spain.jpg" />
+          <h2>Fabada Asturiana</h2>
+          <h4>$5</h4>
+          <p>
+            Fried onions, garlic, chorizo & blood sausage, mixed with beans and
+            red peppers.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of starters section -->
+
+    <!-- Pizza section -->
+    <div class="container">
+      <div class="block sectionHeight">
+        <h1>Pizza</h1>
+        <div class="inline">
+          <img src="Images/italy.jpg" />
+          <h2>Neapolitian</h2>
+          <h4>$25</h4>
+          <p>
+            Pomodorino Vesuviano tomato sauce, Buffalo mozzarella cheese & fresh
+            basil.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/hawaii.jpg" />
+          <h2>Hawaiian</h2>
+          <h4>$10</h4>
+          <p>
+            Komohana Grape tomato sauce, Colby cheese, fresh pineapple & ham.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/italy.jpg" />
+          <h2>Silican</h2>
+          <h4>$25</h4>
+          <p>
+            Pomodora Marinda tomato sauce, Caciocavallo cheese, onions,
+            anchovies & herbs.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/greece.jpg" />
+          <h2>Greek</h2>
+          <h4>$20</h4>
+          <p>
+            Tomato sauce, mozarella, feta, kalamata olives, fresh tomatoes &
+            oregano.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/malta.jpg" />
+          <h2>Maltese</h2>
+          <h4>$15</h4>
+          <p>
+            Maltese alpha potatoes, fresh tomatoes, anchovies, olives &
+            rosemary.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/italy.jpg" />
+          <h2>Carbonara</h2>
+          <h4>$30</h4>
+          <p>
+            Guanciale meat, Pecorino-Romano cheese, heavy cream, scallions,
+            black pepper & eggs.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of pizza section -->
+
+    <!-- Soup section -->
+    <div class="container">
+      <div class="block sectionHeight">
+        <h1>Soup</h1>
+        <div class="inline">
+          <img src="Images/greece.jpg" />
+          <h2>Kotosoupa</h2>
+          <h4>$13</h4>
+          <p>
+            Chicken soup with bouillon, traditional fides pasta & fresh
+            vegetables from our own garden.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/russia.jpg" />
+          <h2>Borsch</h2>
+          <h4>$20</h4>
+          <p>
+            Beetroot soup with ham, vegetables, herbs & a dash of sour cream,
+            sided with Borodinsky bread.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/spain.jpg" />
+          <h2>Sopa de Lentejas</h2>
+          <h4>$15</h4>
+          <p>
+            Lentil soup with sauteed carrots, onions, garlic & potatoes, mixed
+            with ham & herbs.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/norway.jpg" />
+          <h2>Fish soup</h2>
+          <h4>$15</h4>
+          <p>
+            Fish soup with haddock, fish stock, cubed carrots, celery, herbs,
+            garlic & sour cream.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of soup section -->
+
+    <!-- Salad section -->
+    <div class="container">
+      <div class="block sectionHeight">
+        <h1>Salad</h1>
+        <div class="inline">
+          <img src="Images/italy.jpg" />
+          <h2>Caprese salad</h2>
+          <h4>$10</h4>
+          <p>
+            Thin mozzarella slices & fresh tomatoes dressed with basilicum &
+            olive oil.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/mexico.jpg" />
+          <h2>Caesar salad</h2>
+          <h4>$20</h4>
+          <p>
+            The classic! Romano salad with dressing & olive oil, garlic,
+            parmesan & croutons.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/greece.jpg" />
+          <h2>Horiatiki salad</h2>
+          <h4>$15</h4>
+          <p>
+            Greek feta cheese, Kalamata olives, tomatoes, cucumbers, onion &
+            green bell pepper, dressed with olive oil.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/japan.jpg" />
+          <h2>Soba salad</h2>
+          <h4>$15</h4>
+          <p>
+            Chicken, green onions, organic dried soba noodles, asparagus &
+            vinegar dressed in soy sauce.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of salad section -->
+
+    <!-- Dessert section -->
+    <div class="container">
+      <div class="block sectionHeight">
+        <h1>Dessert</h1>
+        <div class="inline">
+          <img src="Images/france.jpg" />
+          <h2>Cheese cake</h2>
+          <h4>$7</h4>
+          <p>
+            Traditional french cheese cake with extra butter and no eggs.
+          </p>
+        </div>
+        <div class="inline">
+          <img src="Images/cyprus.jpg" />
+          <h2>Kourabiedes</h2>
+          <h4>$8</h4>
+          <p>
+            Biscuit of shortbread, made with ground almonds. Quantity: 6.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End of dessert section -->
+
+    <div style="margin-top: 150px;"></div>
+    <!-- So that the desserts section gets more space-->
+
+    <script type="text/javascript" src="JavaScript/menu.js"></script>
+  </body>
+</html>
